@@ -4,9 +4,9 @@
     <artifactId>metrics-provider</artifactId>
     <scm>
         <connection>scm:git:git@metrics-provider:trustedanalytics/metrics-provider.git</connection>
-        <tag>org.trustedanalytics.metrics-provider-0.4.1</tag>
+        <tag>HEAD</tag>
     </scm>
-    <version>0.4.1</version>
+    <version>0.4.2-SNAPSHOT</version>
 
     <parent>
         <groupId>org.trustedanalytics</groupId>
