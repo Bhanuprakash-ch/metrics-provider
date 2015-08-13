@@ -1,0 +1,12 @@
+---
+applications:
+- name: metrics-provider
+  memory: 512M
+  instances: 1
+  host: metrics-provider
+  path: target/metrics-provider-${version}.jar
+  services:
+  - datacatalog
+  - sso
+  - latest-events-service
+

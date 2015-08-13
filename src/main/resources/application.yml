@@ -1,0 +1,26 @@
+debug:
+server:
+  port: 9997
+
+security:
+  ignored: /open,/sdoc.jsp,/*.js,/api-docs,/api-docs/default/*,/images/*,/lib/*,/css/*
+
+spring.oauth2.resource:
+  id: cloud_controller
+  jwt:
+    keyUri: ${vcap.services.sso.credentials.tokenKey}
+
+logging:
+  level:
+    org.trustedanalytics: DEBUG
+
+cf:
+  connectTimeout: 200
+  readTimeout: 3000
+  resource: ${vcap.services.sso.credentials.apiEndpoint}
+
+datacatalog:
+  url: ${vcap.services.datacatalog.credentials.host:http://localhost:5000}
+
+latest-events-service:
+  url: ${vcap.services.latest-events-service.credentials.host:http://localhost:8060}

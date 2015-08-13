@@ -1,0 +1,16 @@
+debug:
+
+security:
+  ignored: /rest/**
+
+logging:
+  level:
+    com.intel: DEBUG
+
+cf:
+  resource: https://api.example.com
+  connectTimeout: 200
+  readTimeout: 3000
+
+datacatalog:
+  url: ${vcap.services.datacatalog.credentials.host:}
