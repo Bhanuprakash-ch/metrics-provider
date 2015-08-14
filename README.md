@@ -24,7 +24,7 @@ Metrics provider binds to two services when deployed on cloud foundry platform:
 Running locally, replacements from application.yml file are used. For example:
 ```
 url: ${vcap.services.datacatalog.credentials.host:http://data-catalog.example.com}
-``
+```
 
 How to build
 ------------
