@@ -1,7 +1,7 @@
 ---
 applications:
 - name: metrics-provider
-  memory: 512M
+  memory: 1G
   instances: 1
   host: metrics-provider
   path: target/metrics-provider-${version}.jar
@@ -9,4 +9,5 @@ applications:
   - datacatalog
   - sso
   - latest-events-service
-
+  env:
+    JBP_CONFIG_OPEN_JDK_JRE: '[memory_sizes: {metaspace: 128m..}]'
