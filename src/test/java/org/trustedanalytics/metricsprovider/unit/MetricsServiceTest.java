@@ -187,7 +187,7 @@ public class MetricsServiceTest {
         verify(metricsDownloadTasks).getOrgSummary(org);
         verify(metricsDownloadTasks).getOrgUserList(org);
         verify(metricsDownloadTasks).getSpacesGuids(org);
-        verify(metricsDownloadTasks).getLatestEvents();
+        verify(metricsDownloadTasks).getLatestEvents(org);
         if (!spaceGuidsDownloadSuccessful) {
             verify(metricsDownloadTasks).getSpaceMetricsSingle(space1);
             verify(metricsDownloadTasks).getSpaceMetricsSingle(space2);

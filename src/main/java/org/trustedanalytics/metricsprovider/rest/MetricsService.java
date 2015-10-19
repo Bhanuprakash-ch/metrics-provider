@@ -63,7 +63,7 @@ public class MetricsService {
 
         CompletableFuture<CfOrgUserList> orgUserCountFuture = tasks.getOrgUserList(org);
 
-        CompletableFuture<EventSummary> latestEvents = tasks.getLatestEvents();
+        CompletableFuture<EventSummary> latestEvents = tasks.getLatestEvents(org);
 
         LOGGER.debug("futures created for getting '{}' metrics", org);
 

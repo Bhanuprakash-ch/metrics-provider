@@ -138,8 +138,8 @@ public class MetricsDownloadTasks {
             "getPublicDatasetCount, org=" + org);
     }
 
-    public CompletableFuture<EventSummary> getLatestEvents() {
-        String path = latestEventsService + "/rest/les/events?size=10";
+    public CompletableFuture<EventSummary> getLatestEvents(UUID org) {
+        String path = latestEventsService + "/rest/les/events?size=10&org=" +org.toString();
         return getAsynchronouslyWithLogging(path, EventSummary.class, null, "getting last events");
     }
 
