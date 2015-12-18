@@ -24,3 +24,6 @@ datacatalog:
 
 latest-events-service:
   url: ${vcap.services.latest-events-service.credentials.host:http://localhost:8060}
+
+endpoints.enabled: false
+endpoints.health.enabled: true
