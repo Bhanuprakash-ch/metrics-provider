@@ -16,10 +16,9 @@
 
 package org.trustedanalytics.metricsprovider.rest;
 
-import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
-import static org.springframework.web.bind.annotation.RequestMethod.GET;
-
 import org.trustedanalytics.cloud.auth.AuthTokenRetriever;
+
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -28,6 +27,9 @@ import org.springframework.web.client.AsyncRestOperations;
 
 import java.util.Map;
 import java.util.UUID;
+
+import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
+import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
 @RestController
 public class MetricsController {
@@ -49,6 +51,7 @@ public class MetricsController {
     @Autowired
     private AsyncRestOperations asyncTemplate;
 
+    @ApiOperation("Get organization metrics")
     @RequestMapping(value = GET_APPS_METRICS_ASYNC, method = GET, produces = APPLICATION_JSON_VALUE)
     public Map<String, Object> getOrgMetrics(@PathVariable UUID org) {
         MetricsDownloadTasks metricsDownloadTasks =

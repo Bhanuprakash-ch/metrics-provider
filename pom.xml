@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <artifactId>metrics-provider</artifactId>
-    <version>0.4.13</version>
+    <version>0.4.14</version>
 
     <parent>
         <groupId>org.trustedanalytics</groupId>
@@ -69,6 +69,12 @@
         </dependency>
 
         <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.3.1</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
@@ -83,10 +89,10 @@
     <properties>
         <start-class>org.trustedanalytics.metricsprovider.Application</start-class>
 
-        <jacoco-measurement-instructions>0.272</jacoco-measurement-instructions>    <!-- Value <0.000, 1.000>, at least 3 places after coma -->
+        <jacoco-measurement-instructions>0.265</jacoco-measurement-instructions>    <!-- Value <0.000, 1.000>, at least 3 places after coma -->
         <jacoco-measurement-branches>0.078</jacoco-measurement-branches>            <!-- Value <0.000, 1.000>, at least 3 places after coma -->
-        <jacoco-measurement-lines>0.324</jacoco-measurement-lines>                  <!-- Value <0.000, 1.000>, at least 3 places after coma -->
-        <jacoco-measurement-classes>0.428</jacoco-measurement-classes>              <!-- Value <0.000, 1.000>, at least 3 places after coma -->
+        <jacoco-measurement-lines>0.315</jacoco-measurement-lines>                  <!-- Value <0.000, 1.000>, at least 3 places after coma -->
+        <jacoco-measurement-classes>0.416</jacoco-measurement-classes>              <!-- Value <0.000, 1.000>, at least 3 places after coma -->
     </properties>
 
     <build>
