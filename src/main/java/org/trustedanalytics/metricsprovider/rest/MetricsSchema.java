@@ -20,9 +20,6 @@ package org.trustedanalytics.metricsprovider.rest;
  */
 public final class MetricsSchema {
 
-    private MetricsSchema() {
-    }
-
     // DatasetMetricsCollector
     public static final String DATASET_COUNT = "datasetCount";
     public static final String PUBLIC_DATASETS = "publicDatasets";
@@ -45,4 +42,7 @@ public final class MetricsSchema {
 
     // Events
     public static final String LATEST_EVENTS = "latestEvents";
+
+    private MetricsSchema() {
+    }
 }
