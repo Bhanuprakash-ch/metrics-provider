@@ -32,11 +32,19 @@ public class EventSummary {
         this.events = events;
     }
 
-    public long getTotal() { return total; }
+    public long getTotal() {
+        return total;
+    }
 
-    public void setTotal(long total) { this.total = total; }
+    public void setTotal(long total) {
+        this.total = total;
+    }
 
-    public List<EventInfo> getEvents() { return events; }
+    public List<EventInfo> getEvents() {
+        return events;
+    }
 
-    public void setEvents(List<EventInfo> events) { this.events = events; }
+    public void setEvents(List<EventInfo> events) {
+        this.events = events;
+    }
 }

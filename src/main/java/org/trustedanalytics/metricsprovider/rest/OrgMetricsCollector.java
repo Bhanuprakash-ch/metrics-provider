@@ -30,6 +30,9 @@ public class OrgMetricsCollector {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(OrgMetricsCollector.class);
 
+    private OrgMetricsCollector() {
+    }
+
     public static void collect(final Map<String, Object> metricsMap, final CompletableFuture<CfOrgSummary> orgSummaryFuture,
             final CompletableFuture<CfOrgQuota> orgQuotaFuture) {
 

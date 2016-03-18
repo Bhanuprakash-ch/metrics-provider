@@ -24,6 +24,9 @@ import java.util.concurrent.CompletableFuture;
 
 public class LatestEventsCollector {
 
+    private LatestEventsCollector() {
+    }
+
     private static final Logger LOGGER = LoggerFactory.getLogger(LatestEventsCollector.class);
 
     public static void collect(final Map<String, Object> metricsMap, final CompletableFuture<EventSummary> latestEvents) {

@@ -26,7 +26,11 @@ import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
 
 public class SpaceMetricsCollector {
+
     private static final Logger LOGGER = LoggerFactory.getLogger(OrgMetricsCollector.class);
+
+    private SpaceMetricsCollector() {
+    }
 
     public static void collect(final Map<String, Object> metricsMap,
             final CompletableFuture<List<SpaceMetrics>> appsMetricsFuture,

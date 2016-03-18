@@ -26,6 +26,9 @@ public class OrgUserMetricsCollector {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(OrgUserMetricsCollector.class);
 
+    private OrgUserMetricsCollector() {
+    }
+
     public static void collect(final Map<String, Object> metricsMap, final CompletableFuture<CfOrgUserList> orgUserCountFuture) {
         try {
             metricsMap.put(MetricsSchema.TOTAL_USERS, orgUserCountFuture.get().getTotalUsers());

@@ -25,6 +25,9 @@ public class DatasetMetricsCollector {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(OrgMetricsCollector.class);
 
+    private DatasetMetricsCollector() {
+    }
+
     public static void collect(final Map<String, Object> metricsMap,
         final CompletableFuture<Long> publicDatasetCountFuture,
         final CompletableFuture<Long> privateDatasetCountFuture) {

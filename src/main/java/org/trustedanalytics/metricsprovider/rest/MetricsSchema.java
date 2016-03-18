@@ -19,6 +19,10 @@ package org.trustedanalytics.metricsprovider.rest;
  * Contains all the JSON fields returned by Metrics Service.
  */
 public final class MetricsSchema {
+
+    private MetricsSchema() {
+    }
+
     // DatasetMetricsCollector
     public static final String DATASET_COUNT = "datasetCount";
     public static final String PUBLIC_DATASETS = "publicDatasets";
