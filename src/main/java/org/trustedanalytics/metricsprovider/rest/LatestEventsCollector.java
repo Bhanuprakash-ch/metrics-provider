@@ -17,7 +17,6 @@ package org.trustedanalytics.metricsprovider.rest;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.trustedanalytics.metricsprovider.cloudadapter.api.CfOrgUserList;
 
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;
