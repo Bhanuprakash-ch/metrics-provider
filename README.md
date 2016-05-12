@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/trustedanalytics/metrics-provider.svg?branch=master)](https://travis-ci.org/trustedanalytics/metrics-provider)
+[![Dependency Status](https://www.versioneye.com/user/projects/57236d22ba37ce00464e056f/badge.svg?style=flat)](https://www.versioneye.com/user/projects/57236d22ba37ce00464e056f)
 
 Metrics provider
 ==========
