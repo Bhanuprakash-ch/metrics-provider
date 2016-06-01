@@ -16,12 +16,10 @@
 
 package org.trustedanalytics.metricsprovider.rest;
 
-import org.springframework.data.annotation.Id;
-
 import java.util.Objects;
 
 public class EventInfo {
-    @Id
+
     private String id;
 
     private String sourceId;
